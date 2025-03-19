@@ -20,6 +20,12 @@ fetch(url, options)
 ## Trending Feature
 This feature is implemented using appwrite, the logic is based on how frequently a movie is searched by users.
 
+## Website
+![Screenshot 2025-03-19 224859](https://github.com/user-attachments/assets/97ce7d79-fd75-4d1f-8d60-084350b0a67f)
+
+## Deployed link
+https://movie-application-appwrite-gwv01yvro-sanjay-1458s-projects.vercel.app/
+
 ## Environment Variables
 The key for the movie api and key for appwrite are stored in .env file
 ```
@@ -31,7 +37,7 @@ VITE_APPWRITE_COLLECTION_ID=123
 ## Using
 Clone the repo
 ```
-git clone https://github.com/username/repository.git
+git clone https://github.com/sanjay-1458/Movie-Application-Appwrite.git
 ```
 Move inside the repo
 ```
