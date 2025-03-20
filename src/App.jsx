@@ -7,7 +7,7 @@ import MovieCard from "./components/MovieCard";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-const bannedKeywords = import.meta.end.VITE_BANNED_KEYWORDS ? import.meta.env.VITE_BANNED_KEYWORDS.split(",")
+const bannedKeywords = import.meta.env.VITE_BANNED_KEYWORDS ? import.meta.env.VITE_BANNED_KEYWORDS.split(",")
   : [];
 const API_OPTIONS = {
   method: "GET",
