@@ -7,6 +7,8 @@ import MovieCard from "./components/MovieCard";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const bannedKeywords = import.meta.end.VITE_BANNED_KEYWORDS ? import.meta.env.VITE_BANNED_KEYWORDS.split(",")
+  : [];
 const API_OPTIONS = {
   method: "GET",
   headers: {
@@ -44,7 +46,7 @@ function App() {
         return;
       }
       if (data.results) {
-        const bannedKeywords = ["adult","milf","18","18+","sex","love","hentai","lust","desire","nude","solowork", "jav", "ntr", "romance", "softcore"];
+        
 
         const filteredMovies = data.results.filter((movie) => {
           const lowerTitle = movie.title.toLowerCase();
